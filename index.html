@@ -1,61 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOneCup | Independent Mobile Game Developer</title>
+    <title>DevOneCup | Independent Game Developer</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; background-color: #fafafa; }
-        h1, h2 { color: #222; }
-        .about-section { margin-bottom: 40px; }
-        .project-card { background: #fff; border: 1px solid #ddd; padding: 25px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .vision-tag { display: inline-block; background: #eef2ff; color: #4338ca; padding: 4px 12px; border-radius: 16px; font-size: 0.85em; font-weight: bold; margin-bottom: 10px; }
-        .footer { margin-top: 60px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 30px; text-align: center; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        :root {
+            --primary-color: #2563eb; /* Blue */
+            --bg-color: #0f172a;      /* Dark Theme */
+            --text-color: #f8fafc;
+        }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            line-height: 1.6; 
+            background-color: var(--bg-color); 
+            color: var(--text-color);
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 40px 20px;
+        }
+        header { text-align: center; margin-bottom: 60px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #fff; }
+        .badge { 
+            background: var(--primary-color); 
+            padding: 5px 15px; 
+            border-radius: 20px; 
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .project-section {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+            border: 1px solid #334155;
+        }
+        .game-title { color: #60a5fa; font-size: 1.8rem; margin-top: 0; }
+        .feature-list { color: #cbd5e1; }
+        
+        /* สไตล์สำหรับปุ่ม */
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #1d4ed8; }
+
+        .footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        a { color: #60a5fa; text-decoration: none; }
     </style>
 </head>
 <body>
+
     <header>
         <h1>DevOneCup</h1>
-        <div class="about-section">
-            <p>
-                <strong>DevOneCup</strong> stands for "One Developer, One Cup of Coffee." 
-                The name serves as a commitment to my original vision: a journey that started with a single individual 
-                and a cup of coffee. It represents the daily ritual where focus and creativity meet—just the developer, 
-                the work, and a cup beside me.
-            </p>
-        </div>
+        <span class="badge">Nont | Independent Game Developer</span>
+        <p style="color: #94a3b8; margin-top: 20px;">
+            Focused on creating satisfying mobile experiences using Unity & AI integration.
+        </p>
     </header>
 
-    <main>
-        <section class="project-card">
-            <span class="vision-tag">Our Vision</span>
-            <h2>One-Handed Mobile Gaming</h2>
-            <p>
-                We specialize in developing mobile experiences optimized for <strong>one-handed gameplay</strong>. 
-                Our mission is to reimagine diverse genres into intuitive, accessible formats without compromising 
-                depth or engagement. While we innovate within this niche, we remain open to exploring 
-                traditional game concepts to deliver high-quality interactive entertainment.
-            </p>
-        </section>
+    <section class="project-section">
+        <h2 class="game-title">Ripple Flow: Relaxing Jigsaw</h2>
+        <p>A unique blend of <strong>2D Puzzle</strong> gameplay and <strong>3D City Visualization</strong>. Designed for portrait mode to provide the most satisfying looping experience.</p>
+        <ul class="feature-list">
+            <li>Satisfying Looping Mechanics</li>
+            <li>Procedural 3D City Growth</li>
+            <li>Optimized for Mobile Devices</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="btn">View on Google Play</a>
+    </section>
 
-        <section class="project-card">
-            <h2>Current Project</h2>
-            <p>
-                <strong>2D Puzzle & 3D City Visualization:</strong> 
-                An upcoming mobile title built with Unity, focused on technical optimization and seamless user experience.
-            </p>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>Contact: devonecup@gmail.com</p>
+    <div class="footer">
+        <p>© 2026 DevOneCup. All rights reserved.</p>
         <p>
             <a href="privacy.html">Privacy Policy</a> | 
-            <a href="https://play.google.com/store/apps/dev?id=5562549230711551630" target="_blank">Google Play Store</a>
+            <a href="mailto:devonecup@gmail.com">Contact Support</a>
         </p>
-        <p>&copy; 2025 DevOneCup. All rights reserved.</p>
-    </footer>
+    </div>
+
 </body>
 </html>
